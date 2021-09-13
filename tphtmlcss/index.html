@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:valid{
+            background-color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    
+       
+    <form action="/ma-page-de-traitement" method="post">
+       
+        <div>
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="user_mail" pattern=".*kalanso\.com$" required>
+        </div>
+
+        <div>
+            <label for="name">Password :</label>
+            <input type="password" id="name" name="user_password"  pattern="(?=.*\d).{6,8}" required>
+        </div>
+    
+        <div class="button">
+            <button type="submit">Envoyer</button>
+            <button type="reset">Réinitialiser</button>
+        </div>
+    </form>
+    
+</body>
+</html>
